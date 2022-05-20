@@ -15,6 +15,8 @@ class Director:
     Attributes:
         is_playing (boolean): Whether or not to keep playing.
         terminal_service: For getting and displaying information on the terminal.
+        puzzle: For getting the random word 
+        parachute: updating the parachute
     """
 
     def __init__(self):
@@ -23,6 +25,8 @@ class Director:
         Args:
             self (Director): an instance of Director.
         """
+        #self.puzzle = Puzzle()
+        #self.parachute = Parachute()
         self._is_playing = True
         self._terminal_service = TerminalService()
 
@@ -36,6 +40,7 @@ class Director:
             self._get_inputs()
             self._do_updates()
             self._do_outputs()
+        #print("Game Over")
 
     def _get_inputs(self):
         """Update this comment
@@ -44,7 +49,7 @@ class Director:
             self (Director): An instance of Director.
         """
         pass
-
+#Valen
     def _do_updates(self):
         """Update this comment
 
