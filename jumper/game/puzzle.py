@@ -1,10 +1,10 @@
 #Pablo 
 class Puzzle:
     def __init__(self):
-        # atributo1, crea lista de entre 5 y 10 palabras random
+        # atribute1, will create a list that will contain between 5 and 10 random words
 
-        #atributo2, string vacía para que luego sea actualizada por random
-    
+        #atribute2 empty string that will be updated by random 
+        #     
     #def choose_word(self):
-        # atributo2 = random.choose(atributo1)
+        # atribute2 = random.choose(atributo1)
         

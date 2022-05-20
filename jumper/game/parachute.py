@@ -3,7 +3,8 @@
 class Parachute: 
 
  #def __init__(self): 
-    #atributo inicial (dibujo completo) 
-    #atributo que marque la cantidad de lineas
+    # Initial atribute (complete drawing) 
+    #This atribute will count the numbers of lines
     
-#def metodo que actualice el paracaidas. 
+#def X 
+# (This method will update the parachute )
