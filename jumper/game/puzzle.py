@@ -17,7 +17,10 @@ class Puzzle:
 
         # atribute1, will create a list that will contain between 5 and 10 random words
         self.words = ["hello", "uruguay", "ecuador", 
-                "argentina", "chocolate", "milk" ]
+                "argentina", "chocolate", "milk",
+                "keyboard", "mouse", "moon", "sun",
+                "stars", "random", "sleep", "late", "night",
+                "husband","wife" ]
 
         #atribute2 empty string that will be updated by random 
         self.secret_word  = ""
