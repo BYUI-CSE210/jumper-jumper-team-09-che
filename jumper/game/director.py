@@ -46,8 +46,10 @@ class Director:
         pass
 
     def _do_updates(self):
+        
         """Update this comment
-
+        If the guess is correct, the letter is revealed.
+        If the guess is incorrect, a line is cut on the player's parachute.
         Args:
             self (Director): An instance of Director.
         """
@@ -55,7 +57,8 @@ class Director:
 
     def _do_outputs(self):
         """Update this comment
-
+        If the puzzle is solved the game is over.
+        If the player has no more parachute the game is over.
         Args:
             self (Director): An instance of Director.
         """
