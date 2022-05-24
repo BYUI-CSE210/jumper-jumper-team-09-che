@@ -47,7 +47,7 @@ class Parachute:
         print a guy, otherwise print it dead"""
 
         if self._lines > 0: 
-            return f"   o\n  /|\\ \n  / \\"
+            return f"   o\n  /|\\ \n  / \\ \n~~~~~~~~~~~~"
 
         else:
-            return f"   x\n  /|\\ \n  / \\"
+            return f"   x\n  /|\\ \n  / \\ \n~~~~~~~~~~~~"
