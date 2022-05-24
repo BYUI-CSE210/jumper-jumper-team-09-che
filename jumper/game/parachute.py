@@ -51,25 +51,3 @@ class Parachute:
 
         else:
             return f"   x\n  /|\\ \n  / \\"
-
-
-# parachute = Parachute()
-
-# print(parachute.print_parachute())
-# print(parachute.print_guy())    
-
-# parachute.cut_parachute()
-# print(parachute.print_parachute())
-# print(parachute.print_guy()) 
-
-# parachute.cut_parachute()
-# print(parachute.print_parachute())
-# print(parachute.print_guy()) 
-
-# parachute.cut_parachute()
-# print(parachute.print_parachute())
-# print(parachute.print_guy()) 
-
-# parachute.cut_parachute()
-# print(parachute.print_parachute())
-# print(parachute.print_guy()) 
