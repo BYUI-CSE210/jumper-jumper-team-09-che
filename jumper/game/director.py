@@ -73,7 +73,7 @@ class Director:
         #Get the user input
         self.user_letter = self._terminal_service.read_text("Please type a letter to play: ")
         self._terminal_service.write_text(" ")
-
+#Valentina
     def _do_updates(self):
         """Updates the hyphens representing the secret word. If the user
         input is incorrect it will substract one line from the parachute
@@ -120,7 +120,7 @@ class Director:
             self._terminal_service.write_text(self._actual_status)
             self._terminal_service.write_text(" ")
             break
-
+#Valentina 
     def _do_outputs(self):
         """displays the parachute, guy and updated hyphens representing
         the secret word
