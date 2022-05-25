@@ -47,15 +47,11 @@ class Director:
         #Get the user input
         self.user_letter = self._terminal_service.read_text("Please type a letter to play: ")
         self._terminal_service.write_text(" ")
-#Valentina
+
     def _do_updates(self):
         
+        def _do_updates(self):
         """Update this comment
-<<<<<<< HEAD
-        If the guess is correct, the letter is revealed.
-        If the guess is incorrect, a line is cut on the player's parachute.
-=======
->>>>>>> 660611551c383e6b835a164915f348faacb17997
         Args:
             self (Director): An instance of Director.
         """
@@ -70,8 +66,13 @@ class Director:
                 self._terminal_service.write_text("Congrats! ")
                 self._terminal_service.write_text(" ")
             else:
-                self._terminal_service.write_text("Wrong letter... Try again")
-                self._terminal_service.write_text(" ")
+                self._parachute.cut_parachute()
+                if not self._parachute.print_parachute() == " ":
+                    self._terminal_service.write_text("Wrong letter... Try again")
+                    self._terminal_service.write_text(" ")
+                else:
+                    self._terminal_service.write_text("Sorry...")
+                    self._terminal_service.write_text(" ")
         while self._is_playing:
             self._actual_status = ""
             self._missing_letter = 0
