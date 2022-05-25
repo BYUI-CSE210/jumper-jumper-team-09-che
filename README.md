@@ -18,7 +18,7 @@ Jumper is a game in which the player seeks to solve a puzzle by guessing the let
 
 - Friendly messages (Welcome, Game Over, Congrats!, Try Again.., etc.)
 
--  Try again (ask the user to play again)
+-  Try again (ask the user to play again, reset method)
 
 - Enhanced user input validation (You have already used this letter, etc.)
 
