@@ -14,6 +14,15 @@ Jumper is a game in which the player seeks to solve a puzzle by guessing the let
 
 - Python 3
 
+## Extra Credit Effort
+
+- Friendly messages (Welcome, Game Over, Congrats!, Try Again.., etc.)
+
+-  Try again (ask the user to play again)
+
+- Enhanced user input validation (You have already used this letter, etc.)
+
+
 ## Team Members
 
 - Renzo Cardoza Carrasco (car22001@byui.edu)

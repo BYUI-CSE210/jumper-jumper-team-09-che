@@ -51,3 +51,8 @@ class Parachute:
 
         else:
             return f"   x\n  /|\\ \n  / \\ \n~~~~~~~~~~~~"
+    
+    def reset(self):
+        """resets the lines of the parachute"""
+        
+        self._lines = len(self._parachute)
