@@ -47,8 +47,10 @@ class Director:
         #Get the user input
         self.user_letter = self._terminal_service.read_text("Please type a letter to play: ")
         self._terminal_service.write_text(" ")
-#Valentina
+
     def _do_updates(self):
+        
+        def _do_updates(self):
         """Update this comment
         Args:
             self (Director): An instance of Director.
@@ -64,8 +66,13 @@ class Director:
                 self._terminal_service.write_text("Congrats! ")
                 self._terminal_service.write_text(" ")
             else:
-                self._terminal_service.write_text("Wrong letter... Try again")
-                self._terminal_service.write_text(" ")
+                self._parachute.cut_parachute()
+                if not self._parachute.print_parachute() == " ":
+                    self._terminal_service.write_text("Wrong letter... Try again")
+                    self._terminal_service.write_text(" ")
+                else:
+                    self._terminal_service.write_text("Sorry...")
+                    self._terminal_service.write_text(" ")
         while self._is_playing:
             self._actual_status = ""
             self._missing_letter = 0
@@ -81,7 +88,8 @@ class Director:
             break
     def _do_outputs(self):
         """Update this comment
-
+        If the puzzle is solved the game is over.
+        If the player has no more parachute the game is over.
         Args:
             self (Director): An instance of Director.
         """
