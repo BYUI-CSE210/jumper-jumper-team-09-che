@@ -26,7 +26,7 @@ class Director:
             self (Director): an instance of Director.
         """
         self.puzzle = Puzzle()
-        self.secret_word = self.puzzle.choose_word()
+        self._secret_word = self.puzzle.choose_word()
         self._parachute = Parachute()
         self._is_playing = True
         self._terminal_service = TerminalService()
@@ -55,7 +55,7 @@ class Director:
         self._terminal_service.write_text(" ")
 
         #Print the lines "-----"
-        self._terminal_service.write_text("_" * len(self.secret_word))
+        self._terminal_service.write_text("_" * len(self._secret_word))
         self._terminal_service.write_text(" ")
 
         #print the parachute
@@ -93,7 +93,7 @@ class Director:
             self._list_letters.append(self.user_letter)
 
             # Message if the letter is in the word
-            if self.user_letter.lower() in self.secret_word:
+            if self.user_letter.lower() in self._secret_word:
                 self._terminal_service.write_text("Congrats! ")
                 self._terminal_service.write_text(" ")
             
@@ -110,7 +110,7 @@ class Director:
             self._actual_status = ""
             self._missing_letter = 0
             
-            for letter in self.secret_word:
+            for letter in self._secret_word:
                 #Update the actual status
                 if letter in self._list_letters:
                     self._actual_status = self._actual_status + letter
@@ -139,7 +139,7 @@ class Director:
         if self._missing_letter == 0:
             #winning message
             self._terminal_service.write_text("Congrats!! You win! ")
-            self._terminal_service.write_text(f"The secret word is: {self.secret_word}")
+            self._terminal_service.write_text(f"The secret word is: {self._secret_word}")
 
             #loop to enhance 
             while self._is_playing:
@@ -170,7 +170,7 @@ class Director:
             self._is_playing = False
             self._terminal_service.write_text("GAME OVER")
             #show what the secret word was
-            self._terminal_service.write_text(f"The secret word was: {self.secret_word}")
+            self._terminal_service.write_text(f"The secret word was: {self._secret_word}")
             self._terminal_service.write_text(" ")
     
     def reset(self):
@@ -179,7 +179,7 @@ class Director:
             self (Director): An instance of the director"""
 
         self.puzzle = Puzzle()
-        self.secret_word = self.puzzle.choose_word()
+        self._secret_word = self.puzzle.choose_word()
         self._parachute.reset()
         self._is_playing = True
         self._list_letters = []
